@@ -1,20 +1,19 @@
 package com.google.in.Entity;
 
+import org.json.simple.JSONObject;
+
 public class Response {
 
 	
 	private String status;
 	private String message;
+	private JSONObject jsonObject;
 	
 	public Response() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Response(String status, String message) {
-		super();
-		this.status = status;
-		this.message = message;
-	}
+	
 
 	public String getStatus() {
 		return status;
@@ -30,6 +29,18 @@ public class Response {
 
 	public void setMessage(String message) {
 		this.message = message;
+	}
+
+
+
+	public JSONObject getJsonObject() {
+		return jsonObject;
+	}
+
+
+
+	public void setJsonObject(JSONObject jsonObject) {
+		this.jsonObject = jsonObject;
 	}
 	
 	
